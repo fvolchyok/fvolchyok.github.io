@@ -3,7 +3,7 @@
     "details": [
       {
          "appID": "L9EPTEV28E.dev.volchyok.contexto.dev",
-         "paths": [ "/game/*"]
+         "paths": [ "/games.html?*"]
       }
     ]
    }
