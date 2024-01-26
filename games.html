@@ -1,1 +1,29 @@
-<h1>Hello world games</h1>
+<html>
+    <head>
+        <script>
+            // TODO:
+            // 1) replace redirect link to appstore page
+            // 2) replace badge: meta->content->app-id
+            // 3) add meta-tags for nice previews
+            function iOS() {
+                return [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ].includes(navigator.platform)
+                // iPad on iOS 13 detection
+                || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+            }
+            if iOS() {
+                window.location.href = "https://www.apple.com";
+            }
+        </script>
+        <meta name="apple-itunes-app" content="app-id=1110145109, app-argument=myURL">
+    </head>
+    <body>
+        <h2>Hello world</h2>
+    </body>
+</html>
