@@ -2,9 +2,17 @@
   "applinks": {
     "details": [
       {
-         "appID": "L9EPTEV28E.dev.volchyok.contexto.dev",
-         "paths": [ "/games.html?*"]
+        "appID": "L9EPTEV28E.dev.volchyok.contexto.dev",
+        "paths": [
+          "/games_stage.html?*"
+        ]
+      },
+      {
+        "appID": "L9EPTEV28E.top.kontext",
+        "paths": [
+          "/games.html?*"
+        ]
       }
     ]
-   }
+  }
 }
