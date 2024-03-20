@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <!--
+        TODO:
+        1) replace redirect link to appstore page
+        2) replace badge: meta->content->app-id
+        3) change open graph data
+        4) change favicon
+        -->
+        <link rel="icon" href="https://www.apple.com/favicon.ico"/>
+        <meta property="og:title" content="WordGame" />
+        <meta property="og:image" content="https://www.apple.com/v/iphone/home/t/images/home/og.png?201610171354" />
+        <meta property="og:description" content="Word game lery long description, probably even multiline, who knows how long could they be" />
+        <script>
+            function iOS() {
+                return [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ].includes(navigator.platform)
+                // iPad on iOS 13 detection
+                || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+            }
+            if (iOS()) {
+                window.location.href = "https://apps.apple.com/us/app/notes/id1110145109";
+            }
+        </script>
+        <meta name="apple-itunes-app" content="app-id=1110145109, app-argument=myURL">
+    </head>
+    <body>
+        <h2>Hello world!!! Stage environment!</h2>
+    </body>
+</html>
