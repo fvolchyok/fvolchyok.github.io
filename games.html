@@ -2,15 +2,21 @@
     <head>
         <!--
         TODO:
-        1) replace redirect link to appstore page
-        2) replace badge: meta->content->app-id
+        1) (done) replace redirect link to appstore page
+        2) replace badge: meta->content->app-id AND app-argument
         3) change open graph data
-        4) change favicon
+        4) (done) change favicon
+        5) add content
         -->
-        <link rel="icon" href="https://www.apple.com/favicon.ico"/>
-        <meta property="og:title" content="WordGame" />
-        <meta property="og:image" content="https://www.apple.com/v/iphone/home/t/images/home/og.png?201610171354" />
-        <meta property="og:description" content="Word game lery long description, probably even multiline, who knows how long could they be" />
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <meta property="og:title" content="Contexto" />
+        <meta property="og:url" content="https://apps.apple.com/app/contexto-word-search-puzzle/id6480043441" />
+        <meta property="og:description" content="Guess the word with your friends!" />
+        <meta property="og:image" content="/og_image.png" />
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
         <script>
             function iOS() {
                 return [
@@ -25,10 +31,10 @@
                 || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
             }
             if (iOS()) {
-                window.location.href = "https://apps.apple.com/us/app/notes/id1110145109";
+                window.location.href = "https://apps.apple.com/app/contexto-word-search-puzzle/id6480043441";
             }
         </script>
-        <meta name="apple-itunes-app" content="app-id=1110145109, app-argument=myURL">
+        <meta name="apple-itunes-app" content="app-id=6480043441, app-argument=myURL">
     </head>
     <body>
         <h2>Hello world</h2>
