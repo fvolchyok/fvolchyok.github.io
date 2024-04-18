@@ -319,7 +319,7 @@ yieldlab.net,2172218,RESELLER
 
 
 # Yandex
-yandex.com, 95740617, DIRECT
+yandex.com, 108588808, DIRECT
 betweendigital.com, 43554, RESELLER
 openx.com, 541177349, RESELLER, 6a698e2ec38604c6
 pubmatic.com, 159668, RESELLER, 5d62403b186f2ace
