@@ -4,9 +4,9 @@
         TODO:
         1) (done) replace redirect link to appstore page
         2) replace badge: meta->content->app-id AND app-argument
-        3) change open graph data
+        3) (done) change open graph data
         4) (done) change favicon
-        5) add content
+        5) (done) add content
         -->
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -37,8 +37,32 @@
             }
         </script>
         <meta name="apple-itunes-app" content="app-id=6480043441, app-argument=myURL">
+        <style>
+            .container_top_level {
+                width: 100%;
+                height: 100%;
+                background-color: #EA8C76;
+                font: normal 30px -apple-system, BlinkMacSystemFont, Verdana, Arial, sans-serif;
+                color: #FFEAD3;
+                text-align:center;
+            }
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
     </head>
-    <body>
-        <h2>Hello world</h2>
+    <body class="container_top_level">
+        <div class="center">
+            <h2>CONTEXTO</h2>
+            <p>Guess the word!</p>
+            <img src="game_preview_iphone.png" style="max-width: 150px; height: auto; align-content: center;">
+            <p>
+                <a href="https://apps.apple.com/us/app/contexto-word-search-puzzle/id6480043441?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1713398400" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+            </p>
+        </div>
     </body>
 </html>
